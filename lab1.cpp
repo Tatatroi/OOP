@@ -3,13 +3,15 @@
 //
 
 #include <iostream>
-
+#include <fstream>
 using namespace std;
 
 int main()
 {
-    int a = 1;
-    int b = 2;
-    cout<<a+b;
+    ifstream fin("text.in");
+    ofstream fout("text.out");
+    int c;
+    fin>>c;
+    fout<<c;
     return 0;
 }
